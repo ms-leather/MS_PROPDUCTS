@@ -14,8 +14,8 @@ const PRODUCTS = [
     name: "Classic Duflle Bag",
     price: 4999,
     colors: {
-      brown: ["assets/duffle1a.jpg","assets/duffle1b.jpg","assets/duffle1c.jpg", "assets/duffle1d.jpg"],
-      green: ["assets/duffle2a.jpg","assets/duffle2b.jpg","assets/duffle2c.jpg ", "assets/duffle2d.jpg"]
+      brown: ["duffle1a.jpg","duffle1b.jpg","duffle1c.jpg", "duffle1d.jpg"],
+      green: ["duffle2a.jpg","duffle2b.jpg","duffle2c.jpg ", "duffle2d.jpg"]
     }
   },
   {
@@ -23,8 +23,8 @@ const PRODUCTS = [
     name: "LA VOUISE BAG",
     price: 2499,
     colors: {
-      tan: ["assets/la1a.jpg","assets/la1b.jpg", "assets/la1c.jpg", "assets/la1d.jpg"],
-      black: ["assets/la2a.jpg","assets/la2b.jpg", "assets/la2c.jpg", "assets/la2d.jpg"]
+      tan: ["la1a.jpg","la1b.jpg", "la1c.jpg", "la1d.jpg"],
+      black: ["la2a.jpg","la2b.jpg", "la2c.jpg", "la2d.jpg"]
     }
   },
   {
@@ -32,8 +32,8 @@ const PRODUCTS = [
     name: "Classic Leather bag",
     price: 1999,
     colors: {
-      brown: ["assets/cbag1a.jpg","assets/cbag1b.jpg","assets/cbag1c.jpg","assets/cbag1d.jpg"],
-      black: ["assets/cbag2a.jpg","assets/cbag2b.jpg","assets/cbag2c.jpg","assets/cbag2d.jpg"]
+    brown: ["cbag1a.jpg","cbag1b.jpg","cbag1c.jpg","cbag1d.jpg"],
+      black: ["cbag2a.jpg","cbag2b.jpg","cbag2c.jpg","cbag2d.jpg"]
     }
   }
 ];
@@ -337,4 +337,5 @@ function scrollToProducts(){ document.getElementById('products').scrollIntoView(
 loadCartFromLocal();
 renderProducts();
 updateCartUI();
+
 
