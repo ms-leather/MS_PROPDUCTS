@@ -5,8 +5,8 @@ const PRODUCTS = [
     name: "Classic Leather Messenger Bag",
     price: 4999,
     colors: {
-      brown: ["assets/bag1a.jpg","assets/bag1b.jpg","assets/bag1c.jpg",],
-      black: ["assets/bag2a.jpg","assets/bag2b.jpg","assets/bag2c.jpg", "assets/bag2d.jpg"]
+      brown: ["bag1a.jpg","bag1b.jpg","bag1c.jpg",],
+      black: ["bag2a.jpg","bag2b.jpg","bag2c.jpg", "bag2d.jpg"]
     }
   },
    {
@@ -337,3 +337,4 @@ function scrollToProducts(){ document.getElementById('products').scrollIntoView(
 loadCartFromLocal();
 renderProducts();
 updateCartUI();
+
