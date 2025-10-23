@@ -32,7 +32,7 @@ const PRODUCTS = [
     name: "Classic Leather bag",
     price: 1999,
     colors: {
-    brown: ["cbag1a.jpg","cbag1b.jpg","cbag1c.jpg","cbag1d.jpg"],
+      brown: ["cbag1a.jpg","cbag1b.jpg","cbag1c.jpg","cbag1d.jpg"],
       black: ["cbag2a.jpg","cbag2b.jpg","cbag2c.jpg","cbag2d.jpg"]
     }
   }
@@ -337,5 +337,3 @@ function scrollToProducts(){ document.getElementById('products').scrollIntoView(
 loadCartFromLocal();
 renderProducts();
 updateCartUI();
-
-
