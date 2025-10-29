@@ -3,7 +3,7 @@ const PRODUCTS = [
   {
     id: "p1",
     name: "Classic Leather Messenger Bag",
-    price: 4999,
+    price: 499,
     colors: {
       brown: ["bag1a.jpg","bag1b.jpg","bag1c.jpg",],
       black: ["bag2a.jpg","bag2b.jpg","bag2c.jpg", "bag2d.jpg"]
@@ -12,7 +12,7 @@ const PRODUCTS = [
    {
     id: "p2",
     name: "Classic Duflle Bag",
-    price: 4999,
+    price: 999,
     colors: {
       brown: ["duffle1a.jpg","duffle1b.jpg","duffle1c.jpg", "duffle1d.jpg"],
       green: ["duffle2a.jpg","duffle2b.jpg","duffle2c.jpg ", "duffle2d.jpg"]
@@ -21,7 +21,7 @@ const PRODUCTS = [
   {
     id: "p3",
     name: "LA VOUISE BAG",
-    price: 2499,
+    price: 799,
     colors: {
       tan: ["la1a.jpg","la1b.jpg", "la1c.jpg", "la1d.jpg"],
       black: ["la2a.jpg","la2b.jpg", "la2c.jpg", "la2d.jpg"]
@@ -30,7 +30,7 @@ const PRODUCTS = [
   {
     id: "p4",
     name: "Classic Leather bag",
-    price: 1999,
+    price: 899,
     colors: {
       brown: ["cbag1a.jpg","cbag1b.jpg","cbag1c.jpg","cbag1d.jpg"],
       black: ["cbag2a.jpg","cbag2b.jpg","cbag2c.jpg","cbag2d.jpg"]
@@ -337,3 +337,4 @@ function scrollToProducts(){ document.getElementById('products').scrollIntoView(
 loadCartFromLocal();
 renderProducts();
 updateCartUI();
+
