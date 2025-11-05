@@ -35,6 +35,14 @@ const PRODUCTS = [
       brown: ["cbag1a.jpg","cbag1b.jpg","cbag1c.jpg","cbag1d.jpg"],
       black: ["cbag2a.jpg","cbag2b.jpg","cbag2c.jpg","cbag2d.jpg"]
     }
+  },
+  {
+    id: "p5",
+    name: "Eagle bag ",
+    price: 2499,
+    colors: {
+      brown: ["eaglea.jpg","eagleb.jpg", "eaglec.jpg"],
+    }
   }
 ];
 
@@ -337,4 +345,5 @@ function scrollToProducts(){ document.getElementById('products').scrollIntoView(
 loadCartFromLocal();
 renderProducts();
 updateCartUI();
+
 
