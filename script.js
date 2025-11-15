@@ -1,3 +1,4 @@
+
 // --- Data: products (each color -> array of images up to 4)
 const PRODUCTS = [
   {
@@ -32,8 +33,10 @@ const PRODUCTS = [
     name: "Classic Leather bag",
     price: 899,
     colors: {
-      brown: ["cbag1a.jpg","cbag1b.jpg","cbag1c.jpg","cbag1d.jpg"],
-      black: ["cbag2a.jpg","cbag2b.jpg","cbag2c.jpg","cbag2d.jpg"]
+      brown: ["cbag1a.jpg","cbag1b.jpg","cbag1c.jpg",],
+      black: ["cbag2a.jpg","cbag2b.jpg","cbag2c.jpg",],
+       green: ["cbag3a.jpg","cbag3b.jpg","cbag3c.jpg",], 
+       darkbrown: ["cbag4a.jpg","cbag4b.jpg","cbag4c.jpg",]
     }
   },
   {
