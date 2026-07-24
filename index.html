@@ -1,120 +1,323 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MS PRODUCTS — Luxury Leather</title>
-  <link rel="stylesheet" href="style.css" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>💖 For Anam | Made With Love By Saad</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.165/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
 </head>
+
 <body>
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-left">
-      <img src="msproductslogo.png" alt="MS PRODUCTS" class="site-logo" />
-      <div class="brand">
-        <div class="brand-name">MS PRODUCTS</div>
-        <div class="brand-tag">Where Luxury Meets Leather</div>
-      </div>
-    </div>
 
-    <div class="header-right">
-      <button class="cart-toggle" id="cartToggle">🛒 <span id="cartCount">0</span></button>
-    </div>
-  </header>
+<canvas id="galaxy"></canvas>
 
-  <!-- CART SIDEBAR -->
-  <aside id="cartSidebar" class="cart-sidebar" aria-hidden="true">
-    <div class="cart-head">
-      <h3>Your Cart</h3>
-      <button class="close-cart" id="closeCartBtn" aria-label="Close cart">✕</button>
-    </div>
-    <div id="cartItems" class="cart-items" role="list"></div>
-    <div class="cart-footer">
-      <div class="cart-total-row">
-        <div>Total</div>
-        <div id="cartTotal">$0</div>
-      </div>
-      <button class="btn-primary" id="checkoutBtn">Proceed to Checkout</button>
-    </div>
-  </aside>
+<div id="loader">
 
-  <!-- HERO -->
-  <!-- Inline style points to hero-bg.jpg. If you use a different filename, change it here. -->
-  <section class="hero" id="hero" style="background-image: url('back.jpg');">
-    <div class="hero-inner">
-      <h1>Where Luxury Meets Leather</h1>
-      <p>Discover handcrafted pieces inspired by timeless elegance and modern craftsmanship.</p>
-      <button class="btn-primary" onclick="scrollToProducts()">EXPLORE OUR PRODUCTS</button>
-    </div>
-  </section>
+<div class="loader-heart">❤</div>
 
-  <!-- PRODUCTS -->
-  <main>
-    <section id="products" class="products-section">
-      <h2>Our Collection</h2>
-      <div id="productGrid" class="product-grid"></div>
-    </section>
+<h2>Loading Memories...</h2>
 
-    <!-- CHECKOUT PAGE -->
-    <section id="checkoutPage" class="checkout-page hidden" aria-hidden="true">
-      <h2>Checkout</h2>
+</div>
 
-      <div class="checkout-layout">
-        <!-- Left: Address & payment -->
-        <div class="checkout-left">
-          <div class="address-card">
-            <h3>Shipping Address</h3>
-            <form id="addressForm">
-              <div class="row">
-                <input id="fullName" type="text" placeholder="Full name" required />
-                <input id="phone" type="tel" placeholder="Phone number" required />
-              </div>
-              <div class="row">
-                <input id="country" type="text" placeholder="Country" required />
-                <input id="state" type="text" placeholder="State" required />
-              </div>
-              <div class="row">
-                <input id="city" type="text" placeholder="City" required />
-                <input id="pincode" type="text" placeholder="Pincode" required />
-              </div>
-              <textarea id="street" placeholder="Street / Address line" rows="3" required></textarea>
-            </form>
-          </div>
+<header class="hero">
 
-         
+<div class="glass">
 
-        <!-- Right: Order summary -->
-        <div class="checkout-right">
-          <div class="order-summary">
-            <h3>Order Summary</h3>
-            <div id="checkoutItems" class="checkout-items" aria-live="polite"></div>
-            <div class="order-total">
-              <div>Total</div>
-              <div id="checkoutTotal">$0</div>
-            </div>
-            <button class="btn-primary full" id="payBtn"> <a class="text22" href="//ms-leather.github.io/payment/">PROCED TO PAY</a></button>
-            <button class="btn-ghost full" id="backToShop">← Continue Shopping</button>
-          </div>
+<h4>Made Only For</h4>
+
+<h1>ANAM ❤️</h1>
+
+<p>
+
+Dear Anam...
+
+Please don't close this page without reading till the end.
+
+Everything written here comes straight from my heart.
+
+</p>
+
+<button id="start">
+
+Open My Heart ❤️
+
+</button>
+
+</div>
+
+</header>
+
+<section class="letter">
+
+<h2>A Letter From Saad ❤️</h2>
+
+<div class="glass letterBox">
+
+<p id="typing">
+
+Dear Anam,
+
+<br><br>
+
+Main maanta hoon...
+
+Meri galti thi.
+
+Aur us galti ki wajah se maine tumhe hurt kiya.
+
+Us baat ka mujhe sach me bahut regret hai.
+
+Agar time ko wapas le ja pata...
+
+to shayad woh moment dobara kabhi aane hi na deta.
+
+Tum meri life ki sabse khoobsurat cheez ho.
+
+Main perfect nahi hoon... Mai bas dhekna cha rha tha ki tum yad hai ya nahi
+
+mai bas ek question phuch rha tha lekin tumhari feelings ko hurt kar diya.
+
+Lekin meri feelings tumhare liye hamesha real rahengi.
+
+Tumhari smile...
+
+Tumhari baatein...
+
+Tumhara gussa bhi...
+
+Sab kuch meri duniya ka part ban chuka hai.
+
+Please...
+
+Ek baar meri baat maan lo.
+
+I am really sorry.
+
+Please wps ajaoo
+
+❤️
+
+- Saad
+
+</p>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>Beautiful Memories</h2>
+
+<div class="photo-grid">
+
+<img src="anam1.jpg" alt="Anam 1">
+
+<img src="anam2.jpg" alt="Anam 2">
+
+<img src="anam3.jpg" alt="Anam 3">
+
+<img src="anam4.jpg" alt="Anam 4">
+
+<img src="anam5.jpg" alt="Anam 5">
+
+</div>
+
+</section>
+
+<section class="love">
+
+<h2>
+
+Why I Love You ❤️
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+😊 Your Smile
+</div>
+
+<div class="card">
+❤️ Your Caring Nature
+</div>
+
+<div class="card">
+🌸 Your Innocence
+</div>
+
+<div class="card">
+😂 Even Your Anger
+</div>
+
+<div class="card">
+💕 Everything About You
+</div>
+
+</div>
+
+</section>
+
+<!-- PART 2 YAHAN SE CONTINUE HOGA -->
+ <!-- ========================= -->
+<!-- Timeline -->
+<!-- ========================= -->
+
+<section class="timeline">
+
+    <h2>Our Story ❤️</h2>
+
+    <div class="timeline-container">
+
+        <div class="timeline-item">
+            <span>💬</span>
+            <h3>First Conversation</h3>
+            <p>App kon?.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- ORDER CONFIRMATION -->
-    <section id="orderConfirmation" class="order-confirmation hidden" aria-hidden="true">
-      <div class="confirm-card">
-        <img src="msproductslogo.png" alt="logo" class="confirm-logo" />
-        <h2>Thank you — Order placed</h2>
-        <p>Your order id: <strong id="orderId"></strong></p>
-        <button class="btn-primary" onclick="backToShop()">Continue Shopping</button>
-      </div>
-    </section>
-  </main>
+        <div class="timeline-item">
+            <span>😊</span>
+            <h3>Beautiful Memories</h3>
+            <p>Every smile with you became my favorite memory.</p>
+        </div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div>© 2025 MS PRODUCTS · Where Luxury Meets Leather</div>
-  </footer>
+        <div class="timeline-item">
+            <span>❤️</span>
+            <h3>Falling For You</h3>
+            <p>Slowly... you became the most important person in my life.</p>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="timeline-item">
+            <span>🥺</span>
+            <h3>Today</h3>
+            <p>I am sry lekin bas question phicha tha.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Promise Section -->
+<!-- ========================= -->
+
+<section class="promise">
+
+    <h2>My Promises 💖</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            ❤️ I'll respect your feelings.
+        </div>
+
+        <div class="card">
+            🌸 I'll communicate better.
+        </div>
+
+        <div class="card">
+            🤝 I'll always stand beside you.
+        </div>
+
+        <div class="card">
+            💕 I'll never stop caring for you.
+        </div>
+
+        <div class="card">
+            🌍 I'll keep trying to become a better person.
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Final Question -->
+<!-- ========================= -->
+
+<section class="final">
+
+    <div class="glass">
+
+        <h2>Can You Forgive Me? 🥺❤️</h2>
+
+        <p>
+
+            I know one website cannot erase the hurt.
+
+            But I hope it shows how much you mean to me.
+
+
+        </p>
+
+        <div class="buttons">
+
+            <button id="yes">
+
+                Yes ❤️
+
+            </button>
+
+            <button id="no">
+
+                No 😤
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
+
+<footer>
+
+    <h2>
+
+        Forever Yours ❤️
+
+    </h2>
+
+    <p>
+
+        Thank you for reading till the end.
+
+    </p>
+
+    <h3>
+
+        Made with ❤️ by Saad
+
+    </h3>
+
+</footer>
+
+
+<audio id="bgMusic" loop>
+    <source src="1.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
